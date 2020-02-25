@@ -11,6 +11,14 @@ from image_functions import *
 im = Image.open("SiriusAndViolet.jpg")
 print(im.width, im.height, im.mode, im.format)  # Display some info about the image
 
-my_image = load_image("xSiriusAndViolet.jpg")
-my_image.show(my_image)
+#my_image = load_image("SiriusAndViolet.jpg")
+#my_image.show(my_image)
 
+#make use of crop_image
+# 1. load an image
+# 2. call crop image and save what it returns
+# 3. call show to display the results
+
+im = Image.open("SiriusAndViolet.jpg")
+im_cropped = (crop_image(im, (200,300,400,500))
+im_cropped.show()
